@@ -182,6 +182,7 @@ namespace :docker do
        *tags.map {|tag| ["-t", tag] }.flatten,
        *build_args.map {|arg| ["--build-arg", arg] }.flatten,
        '--target', target,
+       '--platform', 'linux/x86_64',
        '.'
 
     each_nightly_tag(ruby_version, tags) do |image_name, tag|

@@ -3,7 +3,7 @@ ARG RUBY_VERSION
 ARG RUBY_SO_SUFFIX
 
 ### build ###
-FROM ubuntu:$BASE_IMAGE_TAG AS build
+FROM --platform=linux/x86_64 ubuntu:$BASE_IMAGE_TAG AS build
 
 ARG BASE_IMAGE_TAG
 ARG RUBY_VERSION
