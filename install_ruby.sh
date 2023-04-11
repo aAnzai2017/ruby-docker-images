@@ -86,7 +86,8 @@ fi
     --prefix=/usr/local \
     --disable-install-doc \
     --enable-shared \
-    --enable-yjit
+    --enable-yjit \
+    --with-jemalloc
   )
 
   if [ -n "$cppflags" ]; then

@@ -42,6 +42,7 @@ RUN set -ex && \
             wget \
             xz-utils \
             zlib1g-dev \
+            libjemalloc-dev \
             && \
     apt-get clean && \
     rm -r /var/lib/apt/lists/*
